@@ -14,7 +14,7 @@ groups:
           path: ../postman
   ruby-sdk:
     generators:
-      - name: fernapi/fern-ruby-sdk        
+      - name: fernapi/fern-ruby-sdk
         version: 0.6.3
         github:
           repository: AssemblyAI/assemblyai-ruby-sdk
@@ -29,7 +29,7 @@ groups:
   csharp-sdk:
     generators:
       - name: fernapi/fern-csharp-sdk
-        version: 1.1.0
+        version: 0.1.1
         output:
           location: nuget
           package-name: AssemblyAI
@@ -39,11 +39,7 @@ groups:
           mode: pull-request
         config:
           namespace: AssemblyAI
-          explicit-namespaces: true
           client-class-name: AssemblyAIClient
-          base-api-exception-class-name: ApiException
-          base-exception-class-name: AssemblyAIException
-          generate-error-types: false
   java-sdk:
     generators:
       - name: fernapi/fern-java-sdk
